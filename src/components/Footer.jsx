@@ -7,6 +7,7 @@ const Footer = () => {
     return (
         <footer className="nexus-footer">
             <div className="footer-container">
+
                 <div className="footer-section">
                     <div className="footer-logo">
                         <span className="logo-icon">🎭</span>
@@ -15,14 +16,47 @@ const Footer = () => {
                             <span className="logo-sub">Nexus</span>
                         </div>
                     </div>
+
                     <p className="footer-description">
                         Empowering artists worldwide to showcase their creativity and connect with art lovers.
                     </p>
+
                     <div className="social-icons">
-                        <a href="#" className="social-icon">📘</a>
-                        <a href="#" className="social-icon">📷</a>
-                        <a href="#" className="social-icon">🎨</a>
-                        <a href="#" className="social-icon">💬</a>
+                        <a
+                            href="https://facebook.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="social-icon"
+                        >
+                            📘
+                        </a>
+
+                        <a
+                            href="https://instagram.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="social-icon"
+                        >
+                            📷
+                        </a>
+
+                        <a
+                            href="https://dribbble.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="social-icon"
+                        >
+                            🎨
+                        </a>
+
+                        <a
+                            href="https://discord.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="social-icon"
+                        >
+                            💬
+                        </a>
                     </div>
                 </div>
 
@@ -32,36 +66,44 @@ const Footer = () => {
                         <li><a href="/">Home</a></li>
                         <li><a href="/add">Add Artwork</a></li>
                         <li><a href="/gallery">Gallery</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="/about">About Us</a></li>
                     </ul>
                 </div>
 
                 <div className="footer-section">
                     <h4>Resources</h4>
                     <ul>
-                        <li><a href="#">Artist Tips</a></li>
-                        <li><a href="#">Community Guidelines</a></li>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="/artist-tips">Artist Tips</a></li>
+                        <li><a href="/guidelines">Community Guidelines</a></li>
+                        <li><a href="/help">Help Center</a></li>
+                        <li><a href="/blog">Blog</a></li>
                     </ul>
                 </div>
 
                 <div className="footer-section">
                     <h4>Newsletter</h4>
                     <p>Get art inspiration delivered to your inbox</p>
+
                     <div className="newsletter-form">
-                        <input type="email" placeholder="Your email address" />
-                        <button>Subscribe</button>
+                        <input
+                            type="email"
+                            placeholder="Your email address"
+                        />
+                        <button type="button">Subscribe</button>
                     </div>
                 </div>
+
             </div>
 
             <div className="footer-bottom">
-                <p>&copy; {currentYear} ArtSpace Nexus. All rights reserved.</p>
+                <p>
+                    &copy; {currentYear} ArtSpace Nexus. All rights reserved.
+                </p>
+
                 <div className="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Contact</a>
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="/terms">Terms of Service</a>
+                    <a href="/contact">Contact</a>
                 </div>
             </div>
         </footer>
