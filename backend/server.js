@@ -61,10 +61,7 @@ mongoose.connect(process.env.MONGO_URI)
         });
     })
     .catch((err) => {
-        console.error("❌ MongoDB Connection Error:", err.message);
-        console.log("\n📌 Troubleshooting:");
-        console.log("1. Go to MongoDB Atlas → Network Access");
-        console.log("2. Add IP 0.0.0.0/0");
-        console.log("3. Wait 2-3 minutes");
+        console.error("❌ MongoDB Connection Error:");
+        console.error(err);
         process.exit(1);
     });
